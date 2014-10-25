@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+**
+** Copyright 2009, The Android Open Source Project
+** Copyright (C) 2014 Rudolf Tammekivi <rtammekivi@gmail.com>
+**
+** Licensed under the Apache License, Version 2.0 (the "License")
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+
+<device name="Android">
+  <item name="none">0</item>
+  <item name="screen.on">75</item>
+  <item name="screen.full">201</item>
+  <item name="bluetooth.active">32</item> <!-- Bluetooth data transfer -->
+  <item name="bluetooth.on">0.3</item>  <!-- Bluetooth on & connectable, but not connected -->
+  <item name="wifi.on">0.3</item>
+  <item name="wifi.active">83</item>  <!-- WIFI data transfer -->
+  <item name="wifi.scan">52</item>  <!-- WIFI network scanning -->
+  <item name="dsp.audio">34</item>
+  <item name="dsp.video">265</item>
+  <item name="radio.active">242</item>
+  <item name="radio.scanning">82</item> <!-- cellular radio scanning for signal -->
+  <item name="gps.on">1</item>
+  <!-- Current consumed by the radio at different signal strengths, when paging -->
+  <array name="radio.on"> <!-- Strength 0 to BINS-1 -->
+      <value>2.7</value>
+      <value>3</value>
+  </array>
+  <!-- Different CPU speeds as reported in
+       /sys/devices/system/cpu/cpu0/cpufreq/stats/time_in_state -->
+  <array name="cpu.speeds">
+      <value>122880</value>  <!--  128.88 MHz CPU speed -->
+      <value>245760</value>  <!--  245.76 MHz CPU speed -->
+      <value>368640</value>  <!--  368.64 MHz CPU speed -->
+      <value>768000</value>  <!--  768.00 MHz CPU speed -->
+      <value>806400</value>  <!--  768.00 MHz CPU speed -->
+      <value>1024000</value> <!-- 1024.00 MHz CPU speed -->
+      <value>1200000</value> <!-- 1200.00 MHz CPU speed -->
+      <value>1401600</value> <!-- 1401.60 MHz CPU speed -->
+  </array>
+  <!-- Current when CPU is idle -->
+  <item name="cpu.idle">2</item>
+  <!-- Current at each CPU speed, as per 'cpu.speeds' -->
+  <array name="cpu.active">
+      <value>50</value>
+      <value>70</value>
+      <value>120</value>
+      <value>200</value>
+      <value>230</value>
+      <value>380</value>
+      <value>430</value>
+      <value>550</value>
+  </array>
+  <!-- This is the battery capacity in mAh (measured at nominal voltage) -->
+  <item name="battery.capacity">1930</item>
+</device>
