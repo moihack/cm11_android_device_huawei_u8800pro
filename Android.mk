@@ -17,6 +17,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_BOOTLOADER_BOARD_NAME),u8860)
+ifeq ($(TARGET_BOOTLOADER_BOARD_NAME),u8800pro)
 include $(call first-makefiles-under,$(call my-dir))
 endif

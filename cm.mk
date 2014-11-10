@@ -16,21 +16,21 @@
 #
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 854
+TARGET_SCREEN_HEIGHT := 800
 TARGET_SCREEN_WIDTH := 480
 
 # Custom tag for unofficial builds
-TARGET_UNOFFICIAL_BUILD_ID := Blefish
+TARGET_UNOFFICIAL_BUILD_ID := Moihack
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/huawei/u8860/full_u8860.mk)
+$(call inherit-product, device/huawei/u8800pro/full_u8800pro.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := u8860
-PRODUCT_NAME := cm_u8860
-PRODUCT_MODEL := Honor
+PRODUCT_DEVICE := u8800pro
+PRODUCT_NAME := cm_u8800pro
+PRODUCT_MODEL := X5 Pro
 PRODUCT_BRAND := Huawei
 PRODUCT_MANUFACTURER := Huawei

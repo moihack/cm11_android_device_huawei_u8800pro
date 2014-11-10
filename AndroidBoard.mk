@@ -18,4 +18,4 @@
 LOCAL_PATH := $(call my-dir)
 
 # include the non-open-source counterpart to this file
--include vendor/huawei/u8860/AndroidBoardVendor.mk
+-include vendor/huawei/u8800pro/AndroidBoardVendor.mk

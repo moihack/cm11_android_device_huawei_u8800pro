@@ -24,12 +24,12 @@
 USE_CAMERA_STUB := true
 
 # Inherit from proprietary
-include vendor/huawei/u8860/BoardConfigVendor.mk
+include vendor/huawei/u8800pro/BoardConfigVendor.mk
 
 # Inherit from common
 include device/huawei/msm7x30-common/BoardConfigCommon.mk
 
-TARGET_BOOTLOADER_BOARD_NAME := u8860
+TARGET_BOOTLOADER_BOARD_NAME := u8800pro
 
 # We don't build bootloader nor radio.
 TARGET_NO_BOOTLOADER := true
@@ -56,8 +56,8 @@ WIFI_DRIVER_FW_PATH_AP := "/vendor/firmware/fw_bcmdhd_apsta.bin"
 
 # Bluetooth
 BOARD_HAVE_BLUETOOTH_BCM := true
-BOARD_BLUEDROID_VENDOR_CONF := device/huawei/u8860/bluetooth/vnd_u8860.txt
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/huawei/u8860/bluetooth
+BOARD_BLUEDROID_VENDOR_CONF := device/huawei/u8800pro/bluetooth/vnd_u8800pro.txt
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/huawei/u8800pro/bluetooth
 
 # Filesystem
 # 550MiB

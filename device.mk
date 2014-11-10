@@ -16,7 +16,7 @@
 #
 
 # Include proprietary
-$(call inherit-product, vendor/huawei/u8860/u8860-vendor.mk)
+$(call inherit-product, vendor/huawei/u8800pro/u8800pro-vendor.mk)
 
 # Include common
 $(call inherit-product, device/huawei/msm7x30-common/msm7x30.mk)
@@ -25,9 +25,9 @@ $(call inherit-product, device/huawei/msm7x30-common/msm7x30.mk)
 $(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4329/device-bcm.mk)
 
 # Include keyboards
-$(call inherit-product, device/huawei/u8860/keyboards/keyboards.mk)
+$(call inherit-product, device/huawei/u8800pro/keyboards/keyboards.mk)
 
-DEVICE_PACKAGE_OVERLAYS += device/huawei/u8860/overlay
+DEVICE_PACKAGE_OVERLAYS += device/huawei/u8800pro/overlay
 
 # Hardware-specific features
 PRODUCT_COPY_FILES += \
@@ -48,7 +48,7 @@ PRODUCT_PACKAGES += \
 
 # HAL
 PRODUCT_PACKAGES += \
-	sensors.u8860 \
+	sensors.u8800pro \
 	akmdfs
 
 # RIL
